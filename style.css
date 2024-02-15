@@ -25,7 +25,7 @@ body{
 }
 /* Car Styles */
 .car {
-    width: 85%;
+    width: 80%;
     height: 100%;
     margin: auto;
     position: relative;
@@ -37,18 +37,21 @@ body{
     width: 100%;
 }
 .car-body{
-    height: 96%;
+    height: 98%;
+}
+.car-body > *{
+    position: absolute;
 }
 /* Tire Wheel style */
 .tires{
-    position: absolute;
-    bottom: calc(-.3*var(--view-ratio));
+    bottom: 0;
     width: 85%;
     left: 7.5%;
     height: 25%;
     display: flex;
     flex-flow: nowrap row;
     justify-content: space-between;
+    z-index: 1;
 }
 .tires .wheel {
     background-color: var(--shadow-color-1);
