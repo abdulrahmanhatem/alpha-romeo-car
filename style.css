@@ -1,0 +1,6 @@
+:root{
+    --roze: #ed686b
+}
+body{
+    background-color: var(--roze);
+}
