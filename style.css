@@ -16,8 +16,8 @@ body{
     margin: 0;
     padding: 0;
 }
-/* Paint Styles */
-.paint {
+/* Diagram Styles */
+.diagram {
     display: block;
     width: calc(30*var(--view-ratio));
     height: calc(25*var(--view-ratio));
@@ -39,8 +39,33 @@ body{
 .car-body{
     height: 98%;
 }
+/* Car body */
 .car-body > *{
     position: absolute;
+}
+.car-body .car-frame{
+    width: 100%;
+    height: 34%;
+    background-color: var(--shadow-color-1);
+    border: solid calc(.35*var(--view-ratio)) var(--shadow-color-1);
+    display: block;
+    bottom: 16%;
+    z-index: 2;
+    border-start-start-radius: 20% 50%;
+    border-end-start-radius: 20% 50%;
+    border-start-end-radius: 20% 50%;
+    border-end-end-radius: 20% 50%;
+    box-sizing: border-box;
+}
+.car-body .car-frame .paint{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: var(--roze);
+    border-start-start-radius: 20% 50%;
+    border-end-start-radius: 20% 50%;
+    border-start-end-radius: 20% 50%;
+    border-end-end-radius: 20% 50%;
 }
 /* Tire Wheel style */
 .tires{
