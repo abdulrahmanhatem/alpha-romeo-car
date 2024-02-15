@@ -44,12 +44,13 @@ body{
     position: absolute;
 }
 .car-body .car-frame{
-    width: 100%;
+    width: 90%;
     height: 34%;
+    left: 5%;
+    bottom: 12%;
     background-color: var(--shadow-color-1);
     border: solid calc(.35*var(--view-ratio)) var(--shadow-color-1);
     display: block;
-    bottom: 12%;
     z-index: 2;
     border-start-start-radius: 20% 50%;
     border-end-start-radius: 20% 50%;
@@ -68,13 +69,13 @@ body{
     border-end-end-radius: 20% 50%;
 }
 .car-body .car-frame .shield{
-    width: 56%;
-    height: 13%;
+    width: 62%;
+    height: 14%;
     display: block;
     background-color: var(--shadow-color-1);
     position: absolute;
-    bottom: -13%;
-    left: 22%;
+    bottom: -14%;
+    left: 19%;
     border-radius: 18%;
     border-end-start-radius: 3% 40%;
     border-end-end-radius: 3% 40%;
@@ -92,25 +93,45 @@ body{
 }
 .tires .wheel {
     background-color: var(--shadow-color-1);
-    width: calc(2.8*var(--view-ratio));
+    width: 14%;
     height: 90%;
     border-radius: 20%;
     border: solid calc(.35*var(--view-ratio)) var(--shadow-color-1);
+    position: relative;
+    overflow: hidden;
 }
 .tires .wheel .gray {
     background: var(--gray-color-2);
     width: 100%;
     height: 100%;
     border-radius: 15%;
-    overflow: hidden;
+
 }
 .tires .wheel .shadow-1 {
     background: var(--gray-color-1);
     width: 150%;
-    height: 92%;
+    height: 90%;
     border-radius: 40%;
     display: block;
     margin: -5% -25%;
+}
+.tires .wheel .shadow-2 {
+    background: var(--shadow-color-1);
+    width: 200%;
+    height: 57%;
+    border-radius: 92%;
+    display: block;
+    position: absolute;
+    top: 0%;
+    margin-inline: -25%;
+}
+.tires .wheel:first-of-type .shadow-2 {
+    left: 0;
+    rotate: 0 0 1 32deg;
+}
+.tires .wheel:last-of-type .shadow-2 {
+    right: 0;
+    rotate: 0 0 1 -32deg;
 }
 /* Car Shadow Style */
 .car-shadow{
