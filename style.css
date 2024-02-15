@@ -21,17 +21,26 @@ body{
     height: calc(25*var(--view-ratio));
     border: rgba(0,0,0,.4)solid thin;
 }
+/* Car Styles */
 .car {
     width: 90%;
     height: 100%;
     margin: auto;
+    position: relative;
 }
 .car-body {
     height: 95%;
 }
+.car-frame {
+    height: 95%;
+}
 /* Car Shadow Style */
 .car-shadow{
+    position: absolute;
+    bottom: 0;
+    left: 0;
     background-color: var(--shadow-color);
     border-radius: 50%;
     height: 5%;
+    width: 100%;
 }
