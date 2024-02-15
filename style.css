@@ -1,6 +1,37 @@
+/* Global Styles */
 :root{
-    --roze: #ed686b
+    --roze: #ed686b; 
+    --view-ratio: 1rem;
+    --shadow-color: #232323;
 }
 body{
     background-color: var(--roze);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+/* Paint Styles */
+.paint {
+    display: block;
+    width: calc(30*var(--view-ratio));
+    height: calc(25*var(--view-ratio));
+    border: rgba(0,0,0,.4)solid thin;
+}
+.car {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+.car-body {
+    height: 95%;
+}
+/* Car Shadow Style */
+.car-shadow{
+    background-color: var(--shadow-color);
+    border-radius: 50%;
+    height: 5%;
 }
