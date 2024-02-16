@@ -38,7 +38,7 @@ body{
 }
 .car > * {
     position: absolute;
-    left: 0;
+    inset-inline-start: 0;
     margin: auto;
     width: 100%;
 }
@@ -52,7 +52,7 @@ body{
 .car-body .car-frame{
     width: 90%;
     height: 34%;
-    left: 5%;
+    inset-inline-start: 5%;
     bottom: 12%;
     background-color: var(--shadow-1);
     border: solid calc(.35*var(--view-ratio)) var(--shadow-1);
@@ -81,7 +81,7 @@ body{
 .car-body .head-lights{
     height: 30%;
     width: 100%;
-    top: 18%;
+    inset-block-start: 18%;
     display: flex;
     justify-content: space-between;
 }
@@ -110,39 +110,39 @@ body{
 }
 .car-body .front-bumper > *{
     width: auto;
-    height: 35%;
+
 }
 .car-body .front-bumper .side{
-    border: calc(.2 *var(--view-ratio)) var(--shadow-1) solid;
+    border: calc(0.25 *var(--view-ratio)) var(--shadow-1) solid;
     flex: 1 1 44%;
-    height: 90%;
+    height: 91%;
     background: var(--wihte-1);
     overflow: hidden;
-    
+    position: relative;
 }
 .car-body .front-bumper .side:first-of-type{
-    border-start-start-radius: 4% 12%;
-    border-end-start-radius: 75% 173%;
-    border-start-end-radius: 43% 110%;
+    border-start-start-radius: 4% 10%;
+    border-end-start-radius: 45% 90%;
+    border-start-end-radius: 22% 66%;
     border-end-end-radius: 10% 4%;
     box-shadow: 0.05rem -0.4rem 0rem var(--gray-3) inset;
     margin-inline-start: 2%;
 }
 .car-body .front-bumper .side:last-of-type{
     border-start-end-radius: 4% 10%;
-    border-end-end-radius: 39% 79%;
-    border-start-start-radius: 24% 50%;
+    border-end-end-radius: 45% 90%;
+    border-start-start-radius: 22% 66%;
     border-end-start-radius: 10% 4%;
     box-shadow: 0.05rem -0.4rem 0rem var(--gray-3) inset;
     margin-inline-end: 2%;
-    visibility: hidden;
 }
 .car-body .front-bumper .bumper{
     background: var(--gray-1);
     border: calc(.2 *var(--view-ratio)) var(--shadow-1) solid;
     width: 92%;
     height: 40%;
-    position: relative;;
+    position: absolute;
+    inset-block-start: 18%;
 }
 .car-body .front-bumper .side:first-of-type .bumper{
     border-start-start-radius: 0;
@@ -150,7 +150,7 @@ body{
     border-start-end-radius: 15% 88%;
     border-end-end-radius: 3% 14%;
     box-shadow: 0.05rem 0.4rem 0rem var(--shadow-1) inset;
-    margin-block-start: 5%;
+    inset-inline-start: 0;
 }
 .car-body .front-bumper  .side:last-of-type .bumper{
     border-start-end-radius: 0;
@@ -158,28 +158,76 @@ body{
     border-start-start-radius: 15% 88%;
     border-end-start-radius: 3% 14%;
     box-shadow: 0.05rem 0.4rem 0rem var(--shadow-1) inset;
-    margin-block-end: 5%;
+    inset-inline-end: 0;
 }
 .car-body .bumper .fog-lamp{
     background: var(--orange-2);
     border: calc(.2 *var(--view-ratio)) var(--shadow-1) solid;
     width: 32%;
     height: 72%;
+    box-shadow: 0.1rem 0.3rem 0rem var(--orange-1) inset;
+    position: absolute;
+    inset-block-start: 0;
+}
+.car-body .side:first-of-type .fog-lamp{
+    inset-inline-start: -2%;
     border-start-start-radius: 0;
     border-end-start-radius: 41% 9%;
     border-start-end-radius: 26% 68%;
     border-end-end-radius: 3% 14%;
-    box-shadow: 0.1rem 0.3rem 0rem var(--orange-1) inset;
-    position: absolute;
-    left: -2%;
-    top: 0;
+}
+.car-body .side:last-of-type .fog-lamp{
+    inset-inline-end: -2%;
+    border-start-end-radius: 0;
+    border-end-end-radius: 41% 9%;
+    border-start-start-radius: 26% 68%;
+    border-end-start-radius: 3% 14%;
 }
 .car-body .front-bumper .grill-heart{
     flex: 1 1 12%;
     height: 100%;
+    background-color: red;
+    margin-inline: 1%;
+    background: var(--wihte-1);
+    border-start-start-radius: 20% 20%;
+    border-start-end-radius: 20% 20%;
+    border-end-start-radius: 50% 50%;
+    border-end-end-radius: 50% 50%;
+}
+.car-body .front-bumper .grill-heart .grill{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
-
+.grill span{
+    margin: 4% auto;
+    background-color: var(--gray-1);
+    display: block;
+    height: 10%;
+}
+.grill span:nth-of-type(1){
+    width: 75%;
+}
+.grill span:nth-of-type(2){
+    width: 65%;
+}
+.grill span:nth-of-type(3){
+    width: 60%;
+}
+.grill span:nth-of-type(4){
+    width: 55%;
+}
+.grill span:nth-of-type(5){
+    width: 40%;
+    border-start-start-radius: 10% 32%;
+    border-start-end-radius: 10% 32%;
+    border-end-start-radius: 50% 50%;
+    border-end-end-radius: 50% 50%;
+    height: 14%;
+}
 
 
 
@@ -218,7 +266,7 @@ body{
     background-color: var(--shadow-1);
     position: absolute;
     bottom: -14%;
-    left: 16.5%;
+    inset-inline-start: 16.5%;
     border-radius: 18%;
     border-end-start-radius: 4% 55%;
     border-end-end-radius: 4% 55%;
@@ -227,7 +275,7 @@ body{
 .tires{
     bottom: 1%;
     width: 85%;
-    left: 7.5%;
+    inset-inline-start: 7.5%;
     height: 20%;
     display: flex;
     flex-flow: nowrap row;
@@ -264,15 +312,15 @@ body{
     border-radius: 92%;
     display: block;
     position: absolute;
-    top: 0%;
+    inset-block-start: 0%;
     margin-inline: -25%;
 }
 .tires .wheel:first-of-type .shadow-2 {
-    left: 0;
+    inset-inline-start: 0;
     rotate: 0 0 1 32deg;
 }
 .tires .wheel:last-of-type .shadow-2 {
-    right: 0;
+    inset-inline-end: 0;
     rotate: 0 0 1 -32deg;
 }
 /* Car Shadow Style */
