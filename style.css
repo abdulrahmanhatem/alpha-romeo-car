@@ -96,7 +96,7 @@ body{
     height: 100%;
     background: var(--shadow-1);
     border-radius: 1.3rem;
-    margin-block-start: 2%
+    margin-block-start: 1.5%;
 }
 .car-body .upper .chair:first-of-type{
     margin-inline-start: 22%;
