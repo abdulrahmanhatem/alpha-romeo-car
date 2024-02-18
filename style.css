@@ -245,6 +245,28 @@ body{
     border-radius: 50%;
     z-index: -1;
 }
+.car-body .antenna{
+    width: calc(.5*var(--view-ratio));
+    height: calc(1*var(--view-ratio));
+    background: var(--gray-4);
+    inset-block-start: 0%;
+    inset-inline-start: 12%;
+    z-index: -1;
+    border-radius: 30%;
+    rotate: 0 0 1 2deg;
+}
+.car-body .antenna .mast{
+    width: 0;
+    height: 0;
+    inset-block-end: 87%;
+    inset-inline-start: 120%;
+    display: block;
+    position: absolute;
+    rotate: 0 0 1 5deg;
+    border-left: calc(.14 *var(--view-ratio)) solid transparent;
+    border-right: calc(.14 *var(--view-ratio)) solid transparent;
+    border-bottom: calc(11 *var(--view-ratio)) solid var(--gray-4);
+}
 
 
 
