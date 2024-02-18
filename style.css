@@ -104,6 +104,16 @@ body{
 .car-body .upper .chair:last-of-type{
     margin-inline-end: 22%;
 }
+.car-body .upper .dashboard{
+    width: 20%;
+    height: 2%;
+    position: absolute;
+    bottom: 0;
+    background: var(--shadow-1);
+    margin: auto;
+    inset-inline-start: 40%;
+}
+
 
 
 
