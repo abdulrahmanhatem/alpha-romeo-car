@@ -54,8 +54,7 @@ body{
     height: 34%;
     inset-inline-start: 5%;
     bottom: 12%;
-    background-color: var(--shadow-1);
-    border: solid calc(.35*var(--view-ratio)) var(--shadow-1);
+    background-color: var(--shadow-1);    
     display: block;
     z-index: 2;
     border-start-start-radius: 20% 50%;
@@ -74,6 +73,7 @@ body{
     border-start-end-radius: 20% 50%;
     border-end-end-radius: 20% 50%;
     position: relative;
+    border: solid calc(.35*var(--view-ratio)) var(--shadow-1);
 }
 .car-body .car-frame > *{
     position: absolute;
@@ -234,7 +234,16 @@ body{
     border-start-end-radius: 10% 32%;
     border-end-start-radius: 50% 50%;
     border-end-end-radius: 50% 50%;
-    
+}
+.car-body .side-mirror {
+    width: calc(1.2*var(--view-ratio));
+    height: calc(1.35*var(--view-ratio));
+    background: var(--gray-4);
+    inset-block-start: -6%;
+    inset-inline-end: 4%;
+    border: calc(.3 *var(--view-ratio)) var(--shadow-1) solid;
+    border-radius: 50%;
+    z-index: -1;
 }
 
 
