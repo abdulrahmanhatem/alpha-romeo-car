@@ -117,7 +117,7 @@ body{
     width: 15%;
     height: 50%;
     position: absolute;
-    bottom: -28%;
+    bottom: -30%;
     border: solid calc(.25*var(--view-ratio)) var(--shadow-1);
     margin: auto;
     inset-inline-end: 24.8%;
