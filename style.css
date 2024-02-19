@@ -1,6 +1,10 @@
 /* Global Styles */
 :root{
-    --roze: #ed686b; 
+    --roze-1: #ed686b; 
+    --roze-2: #ee5557; 
+    --roze-3: #c72f34; 
+    --roze-4: #ed3f41; 
+    --roze-5: #811e1f; 
     --view-ratio: 1rem;
     --shadow-1: #232323;
     --gray-1: #363231;
@@ -13,7 +17,7 @@
     --orange-2: #ed8f41;
 }
 body{
-    background-color: var(--roze);
+    background-color: var(--roze-1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,13 +71,98 @@ body{
     width: 100%;
     height: 100%;
     margin: auto;
-    background-color: var(--roze);
+    background-color: var(--roze-4);
     border-start-start-radius: 20% 50%;
     border-end-start-radius: 20% 50%;
     border-start-end-radius: 20% 50%;
     border-end-end-radius: 20% 50%;
     position: relative;
     border: solid calc(.35*var(--view-ratio)) var(--shadow-1);
+    overflow: hidden;
+}
+.car-body .car-frame .paint span{
+    position: absolute;
+}
+.car-body .car-frame .paint span:nth-of-type(1){
+    top: 54%;
+    left: 0;
+    width: 100%;
+    height: 12%;
+    background: var(--roze-3);
+}
+.car-body .car-frame .paint span:nth-of-type(2){
+    top: -28%;
+    left: 7%;
+    width: 87%;
+    height: 56%;
+    background: var(--roze-2);
+    border-radius: 15rem;
+}
+.car-body .car-frame .paint span:nth-of-type(3){
+    top: 25%;
+    left: -5%;
+    width: calc(5*var(--view-ratio));
+    height: calc(5*var(--view-ratio));
+    background: var(--roze-3);
+    filter: blur(0.6rem);
+    border-radius: 50%;
+}
+.car-body .car-frame .paint span:nth-of-type(4){
+    top: 25%;
+    right: -5%;
+    width: calc(5*var(--view-ratio));
+    height: calc(5*var(--view-ratio));
+    background: var(--roze-3);
+    filter: blur(0.6rem);
+    border-radius: 50%;
+}
+.car-body .car-frame .paint span:nth-of-type(5){
+    bottom: -0.5%;
+    left: 0;
+    width: 100%;
+    height: 18%;
+    background: var(--roze-5);
+}
+.car-body .car-frame .paint span:nth-of-type(6){
+    bottom: 5.1%;
+    left: 0;
+    width: 100%;
+    height: 21%;
+}
+.car-body .car-frame .paint span:nth-of-type(6)::after{
+    top: 0%;
+    left: 0;
+    width: 46%;
+    height: 100%;
+    background: var(--roze-4);
+    position: absolute;
+    content: "";
+    border-start-start-radius: 4% 10%;
+    border-end-start-radius: 72% 110%;
+    border-start-end-radius: 22% 66%;
+    border-end-end-radius: 10% 4%;
+}
+.car-body .car-frame .paint span:nth-of-type(6)::before{
+    top: 0%;
+    right: 0;
+    width: 57%;
+    height: 100%;
+    background: var(--roze-4);
+    position: absolute;
+    content: "";
+    border-start-start-radius: 4% 10%;
+    border-end-end-radius: 109% 129%;
+    border-start-end-radius: 22% 66%;
+    border-end-start-radius: 10% 4%;
+}
+.car-body .car-frame .paint span:nth-of-type(7){
+    bottom: 0%;
+    left: 2%;
+    width: 30%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: -1rem 0 0 0 #fff;
 }
 .car-body .car-frame > *{
     position: absolute;
@@ -248,6 +337,7 @@ body{
     background: var(--wihte-1);
     overflow: hidden;
     position: relative;
+
 }
 .car-body .front-bumper .side:first-of-type{
     border-start-start-radius: 4% 10%;
@@ -438,6 +528,7 @@ body{
     border-radius: 18%;
     border-end-start-radius: 4% 55%;
     border-end-end-radius: 4% 55%;
+    z-index: -1;
 }
 /* Tire Wheel style */
 .tires{
