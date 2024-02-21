@@ -518,13 +518,13 @@ body{
 
 
 .car-body .car-frame .splash-shield{
-    width: 67%;
+    width: 66%;
     height: 14%;
     display: block;
     background-color: var(--shadow-1);
     position: absolute;
-    bottom: -14%;
-    inset-inline-start: 16.5%;
+    inset-block-end: -7%;
+    inset-inline-start: 17%;
     border-radius: 18%;
     border-end-start-radius: 4% 55%;
     border-end-end-radius: 4% 55%;
