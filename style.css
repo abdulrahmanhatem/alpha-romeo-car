@@ -65,7 +65,7 @@ body{
     border-end-start-radius: 20% 50%;
     border-start-end-radius: 20% 50%;
     border-end-end-radius: 20% 50%;
-    box-sizing: border-box;
+
 }
 .car-body .car-frame .paint{
     width: 100%;
@@ -76,9 +76,9 @@ body{
     border-end-start-radius: 20% 50%;
     border-start-end-radius: 20% 50%;
     border-end-end-radius: 20% 50%;
-    position: relative;
     border: solid calc(.35*var(--view-ratio)) var(--shadow-1);
     overflow: hidden;
+    box-sizing: border-box;
 }
 .car-body .car-frame .paint span{
     position: absolute;
@@ -588,4 +588,10 @@ body{
     background-color: var(--shadow-1);
     border-radius: 50%;
     height: 4%;
+}
+
+@media(max-width: 500px){
+    :root{
+        --view-ratio: 3vw;
+    }
 }
