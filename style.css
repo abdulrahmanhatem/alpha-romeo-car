@@ -304,7 +304,7 @@ body{
 
 .car-body .hood{
     width: 60%;
-    height: 30%;
+    height: 33%;
     inset-block-start: 0.2rem;
     background: transparent;
     box-shadow: 0 calc(.15 * var(--view-ratio)) 0 calc(-0.05 * var(--view-ratio)) var(--wihte-1);
@@ -325,11 +325,11 @@ body{
 }
 .car-body .hood::after{
     inset-inline-start: -3%;
-    rotate: 0 0 1 -17deg;
+    rotate: 0 0 1 -15deg;
 }
 .car-body .hood::before{
     inset-inline-end: -3%;
-    rotate: 0 0 1 17deg;
+    rotate: 0 0 1 15deg;
 }
 .car-body .head-lights{
     height: 30%;
