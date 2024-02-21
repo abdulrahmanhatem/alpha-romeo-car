@@ -2,9 +2,10 @@
 :root{
     --roze-1: #ed686b; 
     --roze-2: #ee5557; 
-    --roze-3: #c72f34; 
+    --roze-3: #c72f34;
     --roze-4: #ed3f41; 
     --roze-5: #811e1f; 
+    --roze-6: #dc373b; 
     --view-ratio: 1rem;
     --shadow-1: #232323;
     --gray-1: #363231;
@@ -163,6 +164,16 @@ body{
     border-radius: 50%;
     box-shadow: -1rem 0 0 0 #fff;
 }
+.car-body .car-frame .paint span:nth-of-type(8){
+    position: absolute;
+    inset-block-start: -5%;
+    inset-inline-start: 17.5%;
+    width: 65%;
+    height: 12%;
+    background: var(--roze-6);
+    border-end-start-radius: 17% 70%;
+    border-end-end-radius: 17% 70%;
+}
 .car-body .car-frame > *{
     position: absolute;
 }
@@ -291,10 +302,35 @@ body{
 
 
 
-
-
-
-
+.car-body .hood{
+    width: 60%;
+    height: 30%;
+    inset-block-start: 0.2rem;
+    background: transparent;
+    box-shadow: 0 calc(.15 * var(--view-ratio)) 0 calc(-0.05 * var(--view-ratio)) var(--wihte-1);
+    inset-inline-start: 20%;
+    border-end-start-radius: 15% 50%;
+    border-end-end-radius: 15% 50%;
+}
+.car-body .hood::after, .car-body .hood::before{
+    width: 0;
+    height: 0;
+    content: "";
+    display: block;
+    border-top: calc(2 *var(--view-ratio)) solid var(--shadow-1);
+    border-right: calc(.2 *var(--view-ratio)) solid transparent;
+    border-left: calc(.2 *var(--view-ratio)) solid transparent;
+    position: absolute;
+    inset-block-start: -1%;
+}
+.car-body .hood::after{
+    inset-inline-start: -3%;
+    rotate: 0 0 1 -17deg;
+}
+.car-body .hood::before{
+    inset-inline-end: -3%;
+    rotate: 0 0 1 17deg;
+}
 .car-body .head-lights{
     height: 30%;
     width: 100%;
