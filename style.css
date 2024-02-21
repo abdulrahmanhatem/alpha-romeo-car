@@ -320,11 +320,12 @@ body{
     box-shadow: 0 0.35rem 0rem var(--gray-3) inset;
 }
 .car-body .front-bumper{
-    width: 100%;
-    height: 33%;
-    bottom: 6%;
+    width: 98%;
+    height: 29%;
+    bottom: 12%;
     display: flex;
     justify-content: space-between;
+    inset-inline-start: 1%;
 }
 .car-body .front-bumper > *{
     width: auto;
