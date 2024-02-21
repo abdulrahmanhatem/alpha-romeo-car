@@ -92,12 +92,13 @@ body{
     background: var(--roze-3);
 }
 .car-body .car-frame .paint span:nth-of-type(2){
-    top: -28%;
-    left: 7%;
-    width: 87%;
-    height: 56%;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    width: 100%;
+    height: 31%;
     background: var(--roze-2);
-    border-radius: 15rem;
+    border-end-start-radius: 23% 67%;
+    border-end-end-radius: 10% 67%;
 }
 .car-body .car-frame .paint span:nth-of-type(3){
     top: 25%;
