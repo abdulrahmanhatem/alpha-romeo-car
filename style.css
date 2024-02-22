@@ -183,13 +183,48 @@ body{
     height: 60%;
     top: -60%;
 }
+.car-body .upper .screen{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+.car-body .upper span{
+    position: absolute;
+    background-color: var(--shadow-1);
+}
+.car-body .upper span:nth-of-type(1), 
+.car-body .upper span:nth-of-type(2)
+{
+    width: 4%;
+    height: 100%;
+    inset-block-end: -10%;
+}
+.car-body .upper span:nth-of-type(1){
+    inset-inline-start: 5%;
+    rotate: 0 0 1 16deg;
+    border-start-start-radius: 47% 19%;
+}
+.car-body .upper span:nth-of-type(2){
+    inset-inline-end: 5%;
+    rotate: 0 0 1 -16deg;
+    border-start-end-radius: 47% 19%;
+}
+.car-body .upper span:nth-of-type(3){
+    width: 80%;
+    height: 10%;
+    inset-block-start: 10%;
+    inset-inline-start: 10%;
+    border-start-end-radius: 3rem 3rem;
+    border-start-start-radius: 3rem 3rem;
+}
 .car-body .upper .chairs{
     width: 100%;
     height: 20%;
     display: flex;
     justify-content: space-between;
     position: absolute;
-    bottom: 0;
+    inset-block-end: 0;
 }
 .car-body .upper .chair{
     width: 21%;
@@ -222,7 +257,6 @@ body{
     margin: auto;
     inset-inline-end: 24.8%;
     border-radius: 50%;
-    
 }
 
 
