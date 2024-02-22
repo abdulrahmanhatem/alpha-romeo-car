@@ -193,6 +193,7 @@ body{
     position: absolute;
     background-color: var(--shadow-1);
 }
+
 .car-body .upper span:nth-of-type(1), 
 .car-body .upper span:nth-of-type(2)
 {
@@ -200,15 +201,32 @@ body{
     height: 100%;
     inset-block-end: -10%;
 }
+.car-body .upper span:nth-of-type(1)::before, 
+.car-body .upper span:nth-of-type(2)::before
+{
+    position: absolute;
+    width: 14%;
+    height: 100%;
+    background-color: var(--wihte-1);
+    content: "";
+    display: block;
+    inset-block-start: 0%;
+}
 .car-body .upper span:nth-of-type(1){
     inset-inline-start: 5%;
     rotate: 0 0 1 16deg;
     border-start-start-radius: 47% 19%;
 }
+.car-body .upper span:nth-of-type(1)::before{
+    inset-inline-end: 30%;
+}
 .car-body .upper span:nth-of-type(2){
     inset-inline-end: 5%;
     rotate: 0 0 1 -16deg;
     border-start-end-radius: 47% 19%;
+}
+.car-body .upper span:nth-of-type(2)::before{
+    inset-inline-start: 30%;
 }
 .car-body .upper span:nth-of-type(3){
     width: 80%;
@@ -217,6 +235,17 @@ body{
     inset-inline-start: 10%;
     border-start-end-radius: 3rem 3rem;
     border-start-start-radius: 3rem 3rem;
+}
+.car-body .upper span:nth-of-type(3)::before
+{
+    position: absolute;
+    width: 96%;
+    height: 15%;
+    background-color: var(--wihte-1);
+    content: "";
+    display: block;
+    inset-block-end: 30%;
+    inset-inline-start: 2%;
 }
 .car-body .upper .chairs{
     width: 100%;
