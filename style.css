@@ -231,13 +231,13 @@ body{
     border-color: var(--wihte-1) transparent transparent transparent;
     border-radius: 62% 62% 0% 0%;
     inset-inline-start: 1%;
-    rotate: 0 0 1 -40deg;
+    rotate: 0 0 1 -50deg;
 }
 .car-body .upper .screen > span:nth-of-type(3) .curve:nth-of-type(2){ 
     border-color: var(--wihte-1) transparent transparent transparent;
     border-radius: 62% 62% 0% 0%;
     inset-inline-end: 1%;
-    rotate: 0 0 1 40deg;
+    rotate: 0 0 1 50deg;
 }
 .car-body .upper .screen > span:nth-of-type(1)::before, 
 .car-body .upper .screen > span:nth-of-type(2)::before
