@@ -201,43 +201,43 @@ body{
     background-color: var(--shadow-1);
 }
 .car-body .upper .screen > span:nth-of-type(1){
-    inset-inline-start: 4%;
+    inset-inline-start: 5%;
     rotate: 0 0 1 16deg;
     border-start-start-radius: 47% 19%;
 }
 .car-body .upper .screen > span:nth-of-type(2){
-    inset-inline-end: 4%;
+    inset-inline-end: 5%;
     rotate: 0 0 1 -16deg;
     border-start-end-radius: 47% 19%;
 }
 .car-body .upper .screen > span:nth-of-type(3){ 
-    border: solid 0.7rem var(--shadow-1);
+    border: solid 0.75rem var(--shadow-1);
     border-color: var(--shadow-1) transparent transparent transparent;
-    border-radius: 45% 45% 0% 0%;
-    width: 78%;
-    height: 33%;
-    inset-block-start: 5%;
-    inset-inline-start: 7%;
+    border-radius: 62% 62% 0% 0%;
+    width: 80%;
+    height: 25%;
+    inset-block-start: 12%;
+    inset-inline-start: 6%;
 }
 .car-body .upper .screen > span:nth-of-type(3) .curve:nth-of-type(1), 
 .car-body .upper .screen > span:nth-of-type(3) .curve:nth-of-type(2){ 
     border: solid 0.05rem var(--wihte-1);
-    width: 6%;
-    height: 41%;
+    width: 5%;
+    height: 53%;
     position: absolute;
     inset-block-start: 14%;
 }
 .car-body .upper .screen > span:nth-of-type(3) .curve:nth-of-type(1){ 
     border-color: var(--wihte-1) transparent transparent transparent;
     border-radius: 62% 62% 0% 0%;
-    inset-inline-start: -1%;
-    rotate: 0 0 1 -43deg;
+    inset-inline-start: 1%;
+    rotate: 0 0 1 -40deg;
 }
 .car-body .upper .screen > span:nth-of-type(3) .curve:nth-of-type(2){ 
     border-color: var(--wihte-1) transparent transparent transparent;
     border-radius: 62% 62% 0% 0%;
-    inset-inline-end: -1%;
-    rotate: 0 0 1 43deg;
+    inset-inline-end: 1%;
+    rotate: 0 0 1 40deg;
 }
 .car-body .upper .screen > span:nth-of-type(1)::before, 
 .car-body .upper .screen > span:nth-of-type(2)::before
@@ -248,11 +248,11 @@ body{
     background-color: var(--wihte-1);
     content: "";
     display: block;
-    inset-block-start: 3%;
+    inset-block-start: 9%;
     z-index: 1;
 }
 .car-body .upper .screen > span:nth-of-type(1)::before{
-    inset-inline-end: 35%;
+    inset-inline-end: 48%;
 }
 .car-body .upper .screen > span:nth-of-type(2)::before{
     inset-inline-start: 30%;
@@ -264,43 +264,43 @@ body{
     display: block;
     border: solid 0.1rem var(--wihte-1);
     border-color: var(--wihte-1) transparent transparent transparent;
-    border-radius: 35% 35% 0% 0%;
-    width: 104%;
-    height: 145%;
-    inset-block-start: -12%;
+    border-radius: inherit;
+    width: 102%;
+    height: 108%;
+    inset-block-start: -20%;
     inset-inline-start: -2%;
 }
 .car-body .upper .screen > span:nth-of-type(1)::after, 
 .car-body .upper .screen > span:nth-of-type(2)::after
 {
     position: absolute;
-    width: 221%;
-    height: 29%;
-    border: solid 0.55rem var(--shadow-1);
+    width: 188%;
+    height: 35%;
+    border: solid 0.5rem var(--shadow-1);
     background-color: transparent;
     content: "";
     display: block;
-    inset-block-start: -16%;
+    inset-block-start: -13%;
 }
 .car-body .upper .screen > span:nth-of-type(1)::after
-{ 
+{
     border-color: transparent transparent transparent var(--shadow-1);
+    inset-inline-start: 32%;
     border-start-start-radius: 60% 60%;
     border-end-start-radius: 60% 60%;
     border-start-end-radius: 0% 0%;
     border-end-end-radius: 0% 0%;
-    rotate: 0 0 1 18deg;
-    inset-inline-start: 18%;
+    rotate: 0 0 1 35deg;
 }
 .car-body .upper .screen > span:nth-of-type(2)::after
 {
     border-color: transparent var(--shadow-1) transparent transparent;
+    inset-inline-end: 32%;
     border-end-start-radius: 0;
     border-start-start-radius: 0;
     border-start-end-radius: 60% 60%;
     border-end-end-radius: 60% 60%;
-    rotate: 0 0 1 -18deg;
-    inset-inline-end: 18%;
+    rotate: 0 0 1 -35deg;
 }
 .car-body .upper .chairs{
     width: 100%;
