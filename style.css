@@ -283,11 +283,11 @@ body{
     display: block;
     border: solid calc(0.15* var(--view-ratio)) var(--wihte-1);
     border-color: var(--wihte-1) transparent transparent transparent;
-    border-radius: 47% 36% 0 0;
-    width: 76%;
-    height: 22%;
-    inset-block-start: 18%;
-    inset-inline-start: 11%;
+    border-radius: 40% 40% 0 0;
+    width: 79%;
+    height: 42%;
+    inset-block-start: 13%;
+    inset-inline-start: 10%;
     rotate: 1 0 0 50deg;
 }
 .car-body .screen .frame .corners{ 
