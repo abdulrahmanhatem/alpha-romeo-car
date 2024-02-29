@@ -211,7 +211,7 @@ body{
     border-start-end-radius: 47% 19%;
 }
 .car-body .upper .screen > span:nth-of-type(3){ 
-    border: solid 0.75rem var(--shadow-1);
+    border: solid calc(0.75* var(--view-ratio)) var(--shadow-1);
     border-color: var(--shadow-1) transparent transparent transparent;
     border-radius: 62% 62% 0% 0%;
     width: 80%;
@@ -221,7 +221,7 @@ body{
 }
 .car-body .upper .screen > span:nth-of-type(3) .curve:nth-of-type(1), 
 .car-body .upper .screen > span:nth-of-type(3) .curve:nth-of-type(2){ 
-    border: solid 0.05rem var(--wihte-1);
+    border: solid calc(0.05* var(--view-ratio)) var(--wihte-1);
     width: 5%;
     height: 55%;
     position: absolute;
@@ -264,7 +264,7 @@ body{
     position: absolute;
     content: "";
     display: block;
-    border: solid 0.1rem var(--wihte-1);
+    border: solid calc(0.1* var(--view-ratio)) var(--wihte-1);
     border-color: var(--wihte-1) transparent transparent transparent;
     border-radius: 69% 69% 0 0;
     width: 102%;
@@ -278,7 +278,7 @@ body{
     position: absolute;
     width: 188%;
     height: 35%;
-    border: solid 0.5rem var(--shadow-1);
+    border: solid calc(0.5* var(--view-ratio)) var(--shadow-1);
     background-color: transparent;
     content: "";
     display: block;
