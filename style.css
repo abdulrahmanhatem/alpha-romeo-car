@@ -214,7 +214,7 @@ body{
     border: solid calc(0.75* var(--view-ratio)) var(--shadow-1);
     border-color: var(--shadow-1) transparent transparent transparent;
     border-radius: 62% 62% 0% 0%;
-    width: 80%;
+    width: 79%;
     height: 25%;
     inset-block-start: 12%;
     inset-inline-start: 6%;
