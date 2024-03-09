@@ -235,6 +235,7 @@ body{
 }
 .car-body .upper .screen > span{
     position: absolute;
+    z-index: 1;
 }
 .car-body .upper .screen > span:nth-of-type(1), 
 .car-body .upper .screen > span:nth-of-type(2)
@@ -360,14 +361,58 @@ body{
     height: 10%;
     inset-block-start: 27%;
 }
-
-.car-body .upper .chairs{
+.car-body .upper .screen .reflection {
+    width: 100%;
+    block-size: 77%;
+    position: absolute;
+    inset-block-start: 27%;
+    inset-inline-start: 0;
+    overflow: hidden;
+}
+.car-body .upper .screen .reflection  span:nth-of-type(1) {
+    border-color: transparent transparent transparent rgb(225 225 225 / 45% );
+    border-radius: 130% 105% 0% 0%;
+    inset-inline-start: 4.7%;
+    rotate: 0 0 1 0deg;
+    width: 50%;
+    height: 298%;
+    inset-block-start: -124%;
+    display: block;
+    border-width: calc(3.2*var(--view-ratio)) ;
+    border-style: solid;
+    position: absolute;
+}
+.car-body .upper .screen .reflection  span:nth-of-type(2) {
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 298%;
+    inset-inline-end: 0;
+    border-start-end-radius: 36% 58%;
+    overflow: hidden;
+}
+.car-body .upper .screen .reflection  span:nth-of-type(2)::before {
+    border-color: transparent rgb(225 225 225 / 45% ) transparent transparent;
+    border-radius: 198% 142% 0% 0%;
+    inset-inline-end: 20.7%;
+    rotate: 0 0 1 20deg;
+    width: 50%;
+    height: 134%;
+    inset-block-start: -39%;
+    display: block;
+    border-width: calc(3.2*var(--view-ratio)) ;
+    border-style: solid;
+    position: absolute;
+    content: "";
+}
+.car-body .upper .chairs {
     width: 100%;
     height: 20%;
     display: flex;
     justify-content: space-between;
     position: absolute;
     inset-block-end: 0;
+    z-index: -1;
 }
 .car-body .upper .chair{
     width: 21%;
