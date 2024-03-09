@@ -25,12 +25,51 @@ body{
     margin: 0;
     padding: 0;
 }
+
 /* Diagram Styles */
 .diagram {
     display: block;
     width: calc(35*var(--view-ratio));
     height: calc(30*var(--view-ratio));
     border: rgba(0,0,0,.4)solid thin;
+    position: relative;
+}
+/* Background Styles */
+.background {
+    block-size: 100%;
+    inline-size: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+.background .circle {
+    position: absolute;
+    background-color: var(--roze-2);
+    display: block;
+    background-color: var(--wihte-1);
+    border-radius: 50%;
+   
+}
+.background .circle:nth-of-type(1) {
+    block-size: 112%;
+    inline-size: 100%;
+    border-radius: 50%;
+    opacity: .08;
+}
+.background .circle:nth-of-type(2) {
+    block-size: 90%;
+    inline-size: 80%;
+    border-radius: 50%;
+    inset-inline-start: 10%;
+    inset-block-start: 12%;
+    opacity: .1;
+}
+.background .circle:nth-of-type(3) {
+    block-size: 68%;
+    inline-size: 60%;
+    border-radius: 50%;
+    inset-inline-start: 20%;
+    inset-block-start: 26%;
+    opacity: .12;
 }
 /* Car Styles */
 .car {
