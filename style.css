@@ -1,13 +1,11 @@
 /* Global Styles */
 :root{
+    --roze: #811e1f;
     --roze-1: #ed686b; 
-    --roze-2: #ee5557; 
-    --roze-3: #c72f34;
-    --roze-4: #ed3f41; 
-    --roze-5: #811e1f; 
-    --roze-6: #dc373b; 
+    --roze-2: #ed3f41; 
+    --roze-3: #dc373b; 
     --view-ratio: 1rem;
-    --shadow-1: #232323;
+    --black: #232323;
     --gray-1: #363231;
     --gray-2: #4d4747;
     --gray-3: #bebebe;
@@ -59,7 +57,7 @@ body{
     height: 34%;
     inset-inline-start: 5%;
     bottom: 12%;
-    background-color: var(--shadow-1);    
+    background-color: var(--black);    
     display: block;
     z-index: 2;
     border-start-start-radius: 20% 50%;
@@ -72,12 +70,12 @@ body{
     width: 100%;
     height: 100%;
     margin: auto;
-    background-color: var(--roze-4);
+    background-color: var(--roze-2);
     border-start-start-radius: 20% 50%;
     border-end-start-radius: 20% 50%;
     border-start-end-radius: 20% 50%;
     border-end-end-radius: 20% 50%;
-    border: solid calc(.35*var(--view-ratio)) var(--shadow-1);
+    border: solid calc(.35*var(--view-ratio)) var(--black);
     overflow: hidden;
     box-sizing: border-box;
 }
@@ -89,14 +87,16 @@ body{
     left: 0;
     width: 100%;
     height: 12%;
-    background: var(--roze-3);
+    background: var(--roze);
+    opacity: .4;
 }
-.car-body .car-frame .paint span:nth-of-type(2){
+.car-body .car-frame .paint span:nth-of-type(2) {
     inset-block-start: 0;
     inset-inline-start: 0;
     width: 100%;
     height: 31%;
-    background: var(--roze-2);
+    background: var(--roze-1);
+    opacity: .6;
     border-end-start-radius: 23% 67%;
     border-end-end-radius: 10% 67%;
 }
@@ -105,7 +105,8 @@ body{
     left: -5%;
     width: calc(5*var(--view-ratio));
     height: calc(5*var(--view-ratio));
-    background: var(--roze-3);
+    background: var(--roze);
+    opacity: .4;
     filter: blur(0.6rem);
     border-radius: 50%;
 }
@@ -114,7 +115,8 @@ body{
     right: -5%;
     width: calc(5*var(--view-ratio));
     height: calc(5*var(--view-ratio));
-    background: var(--roze-3);
+    background: var(--roze);
+    opacity: .4;
     filter: blur(0.6rem);
     border-radius: 50%;
 }
@@ -123,7 +125,7 @@ body{
     left: 0;
     width: 100%;
     height: 18%;
-    background: var(--roze-5);
+    background: var(--roze);
 }
 .car-body .car-frame .paint span:nth-of-type(6){
     bottom: 5.1%;
@@ -138,7 +140,7 @@ body{
     bottom: -8%;
     width: 60%;
     height: 400%;
-    background: var(--roze-4);
+    background: var(--roze-2);
     position: absolute;
     content: "";
 }
@@ -171,7 +173,7 @@ body{
     inset-inline-start: 17.5%;
     width: 65%;
     height: 12%;
-    background: var(--roze-6);
+    background: var(--roze-3);
     border-end-start-radius: 17% 70%;
     border-end-end-radius: 17% 70%;
 }
@@ -198,7 +200,7 @@ body{
     width: 4%;
     height: 86%;
     inset-block-end: -10%;
-    background-color: var(--shadow-1);
+    background-color: var(--black);
 }
 .car-body .upper .screen > span:nth-of-type(1){
     inset-inline-start: 5%;
@@ -211,8 +213,8 @@ body{
     border-start-end-radius: 47% 19%;
 }
 .car-body .upper .screen > span:nth-of-type(3){ 
-    border: solid calc(1.1* var(--view-ratio)) var(--shadow-1);
-    border-color: var(--shadow-1) transparent transparent transparent;
+    border: solid calc(1.1* var(--view-ratio)) var(--black);
+    border-color: var(--black) transparent transparent transparent;
     border-radius: 40% 40% 0% 0%;
     width: 72%;
     height: 29%;
@@ -226,7 +228,7 @@ body{
     position: absolute;
     width: 107%;
     height: 23%;
-    border: solid calc(0.54* var(--view-ratio)) var(--shadow-1);
+    border: solid calc(0.54* var(--view-ratio)) var(--black);
     background-color: transparent;
     content: "";
     display: block;
@@ -234,7 +236,7 @@ body{
 }
 .car-body .upper .screen > span:nth-of-type(1)::after
 {
-    border-color: transparent transparent transparent var(--shadow-1);
+    border-color: transparent transparent transparent var(--black);
     inset-inline-start: 16%;
     border-start-start-radius: 60% 60%;
     border-end-start-radius: 60% 60%;
@@ -244,7 +246,7 @@ body{
 }
 .car-body .upper .screen > span:nth-of-type(2)::after
 {
-    border-color: transparent var(--shadow-1) transparent transparent;
+    border-color: transparent var(--black) transparent transparent;
     inset-inline-end: 16%;
     border-end-start-radius: 0;
     border-start-start-radius: 0;
@@ -328,7 +330,7 @@ body{
 .car-body .upper .chair{
     width: 21%;
     height: 100%;
-    background: var(--shadow-1);
+    background: var(--black);
     border-radius: 1.3rem;
     margin-block-start: 1.5%;
 }
@@ -343,7 +345,7 @@ body{
     height: 2%;
     position: absolute;
     bottom: 0;
-    background: var(--shadow-1);
+    background: var(--black);
     margin: auto;
     inset-inline-start: 40%;
 }
@@ -352,7 +354,7 @@ body{
     height: 50%;
     position: absolute;
     bottom: -30%;
-    border: solid calc(.25*var(--view-ratio)) var(--shadow-1);
+    border: solid calc(.25*var(--view-ratio)) var(--black);
     margin: auto;
     inset-inline-end: 24.8%;
     border-radius: 50%;
@@ -451,7 +453,7 @@ body{
     height: 0;
     content: "";
     display: block;
-    border-top: calc(2 *var(--view-ratio)) solid var(--shadow-1);
+    border-top: calc(2 *var(--view-ratio)) solid var(--black);
     border-right: calc(.2 *var(--view-ratio)) solid transparent;
     border-left: calc(.2 *var(--view-ratio)) solid transparent;
     position: absolute;
@@ -475,7 +477,7 @@ body{
 .car-body .head-lights .cover{
     height: calc(3.5*var(--view-ratio));
     width: calc(3.2*var(--view-ratio));
-    border: calc(.24*var(--view-ratio)) var(--shadow-1) solid;
+    border: calc(.24*var(--view-ratio)) var(--black) solid;
     border-radius: 50%;
     margin-inline: 3.3%;
 }
@@ -484,7 +486,7 @@ body{
     width: 76%;
     height: 67%;
     border-radius: 50%;
-    border: calc(.38*var(--view-ratio)) var(--shadow-1) solid;
+    border: calc(.38*var(--view-ratio)) var(--black) solid;
     margin: -2% auto;
     box-shadow: 0 0.35rem 0rem var(--gray-3) inset;
 }
@@ -500,7 +502,7 @@ body{
 
 }
 .car-body .front-bumper .side{
-    border: calc(0.25 *var(--view-ratio)) var(--shadow-1) solid;
+    border: calc(0.25 *var(--view-ratio)) var(--black) solid;
     flex: 1 1 44%;
     height: 91%;
     background: var(--wihte-1);
@@ -526,7 +528,7 @@ body{
 }
 .car-body .front-bumper .bumper{
     background: var(--gray-1);
-    border: calc(.2 *var(--view-ratio)) var(--shadow-1) solid;
+    border: calc(.2 *var(--view-ratio)) var(--black) solid;
     width: 92%;
     height: 40%;
     position: absolute;
@@ -537,7 +539,7 @@ body{
     border-end-start-radius: 0;
     border-start-end-radius: 15% 88%;
     border-end-end-radius: 3% 14%;
-    box-shadow: 0.05rem 0.4rem 0rem var(--shadow-1) inset;
+    box-shadow: 0.05rem 0.4rem 0rem var(--black) inset;
     inset-inline-start: 0;
 }
 .car-body .front-bumper  .side:last-of-type .bumper{
@@ -545,12 +547,12 @@ body{
     border-end-end-radius: 0;
     border-start-start-radius: 15% 88%;
     border-end-start-radius: 3% 14%;
-    box-shadow: 0.05rem 0.4rem 0rem var(--shadow-1) inset;
+    box-shadow: 0.05rem 0.4rem 0rem var(--black) inset;
     inset-inline-end: 0;
 }
 .car-body .bumper .fog-lamp{
     background: var(--orange-2);
-    border: calc(.2 *var(--view-ratio)) var(--shadow-1) solid;
+    border: calc(.2 *var(--view-ratio)) var(--black) solid;
     width: 32%;
     height: 72%;
     box-shadow: 0.1rem 0.3rem 0rem var(--orange-1) inset;
@@ -629,7 +631,7 @@ body{
     background: var(--gray-4);
     inset-block-start: -6%;
     inset-inline-end: 7%;
-    border: calc(.3 *var(--view-ratio)) var(--shadow-1) solid;
+    border: calc(.3 *var(--view-ratio)) var(--black) solid;
     border-radius: 50%;
     z-index: -1;
 }
@@ -690,7 +692,7 @@ body{
     width: 66%;
     height: 14%;
     display: block;
-    background-color: var(--shadow-1);
+    background-color: var(--black);
     position: absolute;
     inset-block-end: -7%;
     inset-inline-start: 17%;
@@ -711,11 +713,11 @@ body{
     z-index: 1;
 }
 .tires .wheel {
-    background-color: var(--shadow-1);
+    background-color: var(--black);
     width: 12.3%;
     height: 100%;
     border-radius: 20%;
-    border: solid calc(.3*var(--view-ratio)) var(--shadow-1);
+    border: solid calc(.3*var(--view-ratio)) var(--black);
     position: relative;
     overflow: hidden;
 }
@@ -734,7 +736,7 @@ body{
     margin: -5% -25%;
 }
 .tires .wheel .shadow-2 {
-    background: var(--shadow-1);
+    background: var(--black);
     width: 200%;
     height: 57%;
     border-radius: 92%;
@@ -754,7 +756,7 @@ body{
 /* Car Shadow Style */
 .car-shadow{
     bottom: 0;
-    background-color: var(--shadow-1);
+    background-color: var(--black);
     border-radius: 50%;
     height: 4%;
 }
