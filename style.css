@@ -29,8 +29,8 @@ body{
 /* Diagram Styles */
 .diagram {
     display: block;
-    width: calc(35*var(--view-ratio));
-    height: calc(30*var(--view-ratio));
+    width: calc(32*var(--view-ratio));
+    height: calc(27*var(--view-ratio));
     border: rgba(0,0,0,.4)solid thin;
     position: relative;
 }
@@ -73,10 +73,12 @@ body{
 }
 /* Car Styles */
 .car {
-    width: 80%;
-    height: 100%;
+    width: 90%;
+    height: 60%;
     margin: auto;
-    position: relative;
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline-start: 5%;
 }
 .car > * {
     position: absolute;
@@ -91,19 +93,19 @@ body{
 .car-body > *{
     position: absolute;
 }
-.car-body .car-frame{
+.car-body .car-frame {
     width: 90%;
-    height: 34%;
+    height: 65%;
     inset-inline-start: 5%;
     bottom: 12%;
-    background-color: var(--black);    
+    background-color: var(--black);
     display: block;
     z-index: 2;
     border-start-start-radius: 20% 50%;
     border-end-start-radius: 20% 50%;
     border-start-end-radius: 20% 50%;
     border-end-end-radius: 20% 50%;
-    bottom: 9%;
+    bottom: 17%;
 }
 .car-body .car-frame .paint{
     width: 100%;
@@ -741,11 +743,11 @@ body{
     z-index: -1;
 }
 /* Tire Wheel style */
-.tires{
-    bottom: 1%;
+.tires {
+    bottom: 3%;
     width: 85%;
     inset-inline-start: 7.5%;
-    height: 20%;
+    height: 40%;
     display: flex;
     flex-flow: nowrap row;
     justify-content: space-between;
@@ -793,11 +795,11 @@ body{
     rotate: 0 0 1 -32deg;
 }
 /* Car Shadow Style */
-.car-shadow{
+.car-shadow {
     bottom: 0;
     background-color: var(--black);
     border-radius: 50%;
-    height: 4%;
+    height: 6%;
 }
 
 @media(max-width: 500px){
