@@ -31,7 +31,6 @@ body{
     display: block;
     width: calc(32*var(--view-ratio));
     height: calc(27*var(--view-ratio));
-    border: rgba(0,0,0,.4)solid thin;
     position: relative;
 }
 /* Background Styles */
