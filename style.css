@@ -224,8 +224,8 @@ body{
 }
 .car-body .upper {
     width: 100%;
-    height: 60%;
-    top: -60%;
+    height: 46%;
+    top: -46%;
 }
 .car-body .upper .screen{
     width: 70%;
@@ -233,12 +233,15 @@ body{
     margin: auto;
     position: relative;
 }
-.frame{
+.car-body .screen .frame{
+    width: 100%;
+    height: 100%; 
+}
+/* .car-body .screen .frame svg{
     width: 100%;
     height: 100%;
-    
-}
-.car-body .upper .screen .frame > span{
+} */
+/*.car-body .upper .screen .frame > span{
     position: absolute;
     z-index: 1;
 }
@@ -365,7 +368,7 @@ body{
     width: 3.5%;
     height: 10%;
     inset-block-start: 27%;
-}
+} */
 .car-body .back-mirror  {
     position: absolute;
     inset-block-start: 26%;
