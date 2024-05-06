@@ -1,9 +1,24 @@
 /* Global Styles */
 :root{
+    
     --roze: #811e1f;
-    --roze-1: #ed686b; 
-    --roze-2: #ed3f41; 
-    --roze-3: #dc373b; 
+    --roze-1: #ed686b;
+    --roze-2: #ff7578; 
+    --roze-3: #fe8282; 
+    --roze-4: #ff999a;
+    --roze-5: #c22f30;
+    --roze-6: #ee5557;
+    --roze-7: #ed3f41;
+    --roze-8: #7f201c;
+    --roze-9: #ea3e41;
+    --roze-10: #d93838;
+    --roze-20: #ed3f41;
+    --roze-20: #ff999a;
+    --roze-20: #ff999a;
+    --roze-20: #ff999a;
+    --roze-20: #ff999a;
+    --roze-20: #ff999a;
+
     --view-ratio: 1rem;
     --black: #232323;
     --gray-1: #363231;
@@ -42,19 +57,16 @@ body{
 }
 .background .circle {
     position: absolute;
-    background-color: var(--roze-2);
     display: block;
-    background-color: var(--wihte-1);
     border-radius: 50%;
-   
 }
 .background .circle:nth-of-type(1) {
     block-size: 113%;
     inline-size: 94%;
     border-radius: 50%;
-    opacity: .08;
     inset-inline-start: 3%;
     inset-block-start: 6%;
+    background-color: var(--roze-2);
 }
 .background .circle:nth-of-type(2) {
     block-size: 90%;
@@ -62,7 +74,7 @@ body{
     border-radius: 50%;
     inset-inline-start: 13%;
     inset-block-start: 18%;
-    opacity: .1;
+    background-color: var(--roze-3);
 }
 .background .circle:nth-of-type(3) {
     block-size: 64.5%;
@@ -70,7 +82,7 @@ body{
     border-radius: 50%;
     inset-inline-start: 23%;
     inset-block-start: 29.5%;
-    opacity: .14;
+    background-color: var(--roze-4);
 }
 /* Car Styles */
 .car {
@@ -112,7 +124,7 @@ body{
     width: 100%;
     height: 100%;
     margin: auto;
-    background-color: var(--roze-2);
+    background-color: var(--roze-7);
     border-start-start-radius: 20% 50%;
     border-end-start-radius: 20% 50%;
     border-start-end-radius: 20% 50%;
@@ -129,16 +141,14 @@ body{
     left: 0;
     width: 100%;
     height: 12%;
-    background: var(--roze);
-    opacity: .4;
+    background: var(--roze-5);
 }
 .car-body .car-frame .paint span:nth-of-type(2) {
     inset-block-start: 0;
     inset-inline-start: 0;
     width: 100%;
     height: 31%;
-    background: var(--roze-1);
-    opacity: .6;
+    background: var(--roze-6);
     border-end-start-radius: 23% 67%;
     border-end-end-radius: 10% 67%;
 }
@@ -147,8 +157,7 @@ body{
     left: -5%;
     width: calc(5*var(--view-ratio));
     height: calc(5*var(--view-ratio));
-    background: var(--roze);
-    opacity: .4;
+    background: var(--roze-7);
     filter: blur(0.6rem);
     border-radius: 50%;
 }
@@ -157,8 +166,7 @@ body{
     right: -5%;
     width: calc(5*var(--view-ratio));
     height: calc(5*var(--view-ratio));
-    background: var(--roze);
-    opacity: .4;
+    background: var(--roze-7);
     filter: blur(0.6rem);
     border-radius: 50%;
 }
@@ -167,13 +175,13 @@ body{
     left: 0;
     width: 100%;
     height: 18%;
-    background: var(--roze);
+    background: var(--roze-8);
 }
-.car-body .car-frame .paint span:nth-of-type(6){
-    bottom: 5.1%;
+.car-body .car-frame .paint span:nth-of-type(6) {
+    bottom: 5.5%;
     left: 0;
     width: 100%;
-    height: 21%;
+    height: 27%;
     overflow: hidden;
 }
 .car-body .car-frame .paint span:nth-of-type(6)::after, 
@@ -182,7 +190,7 @@ body{
     bottom: -8%;
     width: 60%;
     height: 400%;
-    background: var(--roze-2);
+    background: var(--roze-9);
     position: absolute;
     content: "";
 }
@@ -215,7 +223,7 @@ body{
     inset-inline-start: 17.5%;
     width: 65%;
     height: 12%;
-    background: var(--roze-3);
+    background: var(--roze-10);
     border-end-start-radius: 17% 70%;
     border-end-end-radius: 17% 70%;
 }
@@ -224,8 +232,8 @@ body{
 }
 .car-body .upper {
     width: 100%;
-    height: 46%;
-    top: -46%;
+    height: 60%;
+    top: -60%;
 }
 .car-body .upper .screen{
     width: 70%;
@@ -237,11 +245,7 @@ body{
     width: 100%;
     height: 100%; 
 }
-/* .car-body .screen .frame svg{
-    width: 100%;
-    height: 100%;
-} */
-/*.car-body .upper .screen .frame > span{
+.car-body .upper .screen .frame > span{
     position: absolute;
     z-index: 1;
 }
@@ -266,7 +270,7 @@ body{
 .car-body .upper .screen .frame > span:nth-of-type(3){ 
     border: solid calc(1.1* var(--view-ratio)) var(--black);
     border-color: var(--black) transparent transparent transparent;
-    border-radius: 40% 40% 0% 0%;
+    border-radius: 42% 42% 0% 0%;
     width: 72%;
     height: 29%;
     inset-block-start: 3%;
@@ -274,10 +278,9 @@ body{
     rotate: 1 0 0 53deg;
 }
 .car-body .upper .screen .frame > span:nth-of-type(1)::after, 
-.car-body .upper .screen .frame > span:nth-of-type(2)::after
-{
+.car-body .upper .screen .frame > span:nth-of-type(2)::after {
     position: absolute;
-    width: 107%;
+    width: 150%;
     height: 23%;
     border: solid calc(0.54* var(--view-ratio)) var(--black);
     background-color: transparent;
@@ -285,24 +288,22 @@ body{
     display: block;
     inset-block-start: -12%;
 }
-.car-body .upper .screen .frame > span:nth-of-type(1)::after
-{
+.car-body .upper .screen .frame > span:nth-of-type(1)::after {
     border-color: transparent transparent transparent var(--black);
     inset-inline-start: 16%;
-    border-start-start-radius: 60% 60%;
-    border-end-start-radius: 60% 60%;
+    border-start-start-radius: 64% 72%;
+    border-end-start-radius: 64% 55%;
     border-start-end-radius: 0% 0%;
     border-end-end-radius: 0% 0%;
     rotate: 0 0 1 33deg;
 }
-.car-body .upper .screen .frame > span:nth-of-type(2)::after
-{
+.car-body .upper .screen .frame > span:nth-of-type(2)::after {
     border-color: transparent var(--black) transparent transparent;
     inset-inline-end: 16%;
     border-end-start-radius: 0;
     border-start-start-radius: 0;
-    border-start-end-radius: 60% 60%;
-    border-end-end-radius: 60% 60%;
+    border-start-end-radius: 63% 74%;
+    border-end-end-radius: 68% 58%;
     rotate: 0 0 1 -33deg;
 }
 .car-body .upper .screen .line{
@@ -342,6 +343,7 @@ body{
     inset-block-start: 13%;
     inset-inline-start: 10%;
     rotate: 1 0 0 50deg;
+    z-index: 1;
 }
 .car-body .screen .line .corners{ 
     width: 100%;
@@ -350,15 +352,16 @@ body{
 .car-body .screen .line .corners span{ 
     border: solid calc(0.1* var(--view-ratio)) var(--wihte-1);
     position: absolute;
+    z-index: 1;
 }
-.car-body .screen .line .corners span:nth-of-type(1){ 
+.car-body .screen .line .corners span:nth-of-type(1) {
     border-color: var(--wihte-1) transparent transparent transparent;
-    border-radius: 62% 62% 0% 0%;
-    inset-inline-start: 12%;
+    border-radius: 64% 59% 0% 0%;
+    inset-inline-start: 11.5%;
     rotate: 0 0 1 -37deg;
-    width: 3.5%;
-    height: 12%;
-    inset-block-start: 27%;
+    width: 3.1%;
+    height: 7%;
+    inset-block-start: 28%;
 }
 .car-body .upper .screen .line .corners span:nth-of-type(2){ 
     border-color: var(--wihte-1) transparent transparent transparent;
@@ -368,7 +371,7 @@ body{
     width: 3.5%;
     height: 10%;
     inset-block-start: 27%;
-} */
+}
 .car-body .back-mirror  {
     position: absolute;
     inset-block-start: 26%;
@@ -395,7 +398,7 @@ body{
 }
 .car-body .back-mirror .mirror::before {
     border: solid 1rem;
-    border-color: rgb(242, 148, 150) transparent transparent transparent;
+    border-color: var(--roze-4) transparent transparent transparent;
     position: absolute;
     width: 100%;
     height: 50%;
