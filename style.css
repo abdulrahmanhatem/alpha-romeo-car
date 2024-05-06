@@ -636,14 +636,13 @@ body{
     width: auto;
 
 }
-.car-body .front-bumper .side{
+.car-body .front-bumper .side {
     border: calc(0.25 *var(--view-ratio)) var(--black) solid;
-    flex: 1 1 44%;
+    flex: 1 1 36%;
     height: 91%;
     background: var(--wihte-1);
     overflow: hidden;
     position: relative;
-
 }
 .car-body .front-bumper .side:first-of-type{
     border-start-start-radius: 4% 10%;
@@ -708,23 +707,119 @@ body{
     border-start-start-radius: 26% 68%;
     border-end-start-radius: 3% 14%;
 }
-.car-body .front-bumper .grill-heart{
+.car-body .front-bumper .grill-heart {
     flex: 1 1 12%;
-    height: 100%;
-    background-color: red;
+    height: 117%;
     margin-inline: 1%;
-    background: var(--wihte-1);
-    border-start-start-radius: 20% 20%;
-    border-start-end-radius: 20% 20%;
-    border-end-start-radius: 50% 50%;
-    border-end-end-radius: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 1%;
 }
+.car-body .front-bumper .grill-heart .base{
+    inline-size: 100%;
+    block-size: 100%;
+    position: relative;
+}
+.car-body .front-bumper .grill-heart .base > span{
+    background: var(--wihte-1);
+    position: absolute
+}
+.car-body .front-bumper .grill-heart .base > span:nth-of-type(1) {
+    inline-size: 70%;
+    block-size: 50%;
+    inset-inline-start: 15%;
+    inset-block-start: 10%;
+}
+.car-body .front-bumper .grill-heart .base > span:nth-of-type(2) {
+    inline-size: 70%;
+    block-size: 60%;
+    inset-inline-start: 15%;
+    inset-block-end: 0%;
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+}
+.car-body .front-bumper .grill-heart .base > span:nth-of-type(3), 
+.car-body .front-bumper .grill-heart .base > span:nth-of-type(4) {
+    inline-size: 24%;
+    block-size: 24%;
+    inset-block-start: -2%;
+    border-radius: 50%;
+}
+.car-body .front-bumper .grill-heart .base > span:nth-of-type(3) {
+    inset-inline-start: 6%;
+}
+.car-body .front-bumper .grill-heart .base > span:nth-of-type(4) {
+    inset-inline-end: 6%;
+}
+.car-body .front-bumper .grill-heart .base > span:nth-of-type(5), 
+.car-body .front-bumper .grill-heart .base > span:nth-of-type(6) {
+    inline-size: 10%;
+    block-size: 65%;
+    inset-block-start: 8%;
+}
+.car-body .front-bumper .grill-heart .base > span:nth-of-type(5) {
+    inset-inline-start: 10.5%;
+    rotate: 0 0 1 -8deg;
+}
+.car-body .front-bumper .grill-heart .base > span:nth-of-type(6) {
+    inset-inline-end: 10.5%;
+    rotate: 0 0 1 8deg;
+}
+.car-body .front-bumper .grill-heart .base > span:nth-of-type(7) {
+    inline-size: 60%;
+    block-size: 53%;
+    inset-inline-start: 20%;
+    inset-block-start: -14%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;
+}
+.car-body .front-bumper .grill-heart .base > span:nth-of-type(8) {
+    inline-size: 60%;
+    block-size: 20%;
+    inset-inline-start: 20%;
+    inset-block-start: -2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .car-body .front-bumper .grill-heart .grill{
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    display: none;
 
 }
 .grill span{
