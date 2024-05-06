@@ -715,6 +715,7 @@ body{
     justify-content: center;
     align-items: center;
     margin-block-start: 1%;
+    position: relative;
 }
 .car-body .front-bumper .grill-heart .base{
     inline-size: 100%;
@@ -723,7 +724,8 @@ body{
 }
 .car-body .front-bumper .grill-heart .base > span{
     background: var(--wihte-1);
-    position: absolute
+    position: absolute;
+    z-index: 1;
 }
 .car-body .front-bumper .grill-heart .base > span:nth-of-type(1) {
     inline-size: 70%;
@@ -779,6 +781,13 @@ body{
     block-size: 20%;
     inset-inline-start: 20%;
     inset-block-start: -2%;
+}
+.car-body .front-bumper .grill-heart .base.shadow {
+    position: absolute;
+}
+.car-body .front-bumper .grill-heart .base.shadow > span {
+    box-shadow: 0 0 0 .1rem var(--roze-8);
+    z-index: 0;
 }
 
 
