@@ -170,18 +170,18 @@ body{
     filter: blur(0.6rem);
     border-radius: 50%;
 }
-.car-body .car-frame .paint span:nth-of-type(5){
+.car-body .car-frame .paint span:nth-of-type(5) {
     bottom: -0.5%;
     left: 0;
-    width: 100%;
-    height: 18%;
+    width: 103%;
+    height: 22%;
     background: var(--roze-8);
 }
 .car-body .car-frame .paint span:nth-of-type(6) {
     bottom: 5.5%;
     left: 0;
     width: 100%;
-    height: 27%;
+    height: 17%;
     overflow: hidden;
 }
 .car-body .car-frame .paint span:nth-of-type(6)::after, 
@@ -247,7 +247,6 @@ body{
 }
 .car-body .upper .screen .frame > span{
     position: absolute;
-    z-index: 1;
 }
 .car-body .upper .screen .frame > span:nth-of-type(1), 
 .car-body .upper .screen .frame > span:nth-of-type(2)
@@ -416,6 +415,7 @@ body{
     inset-block-start: 27%;
     inset-inline-start: 0;
     overflow: hidden;
+    z-index: -1;
 }
 .car-body .upper .screen .reflection  span:nth-of-type(1) {
     border-color: transparent transparent transparent rgb(225 225 225 / 45% );
@@ -460,7 +460,7 @@ body{
     justify-content: space-between;
     position: absolute;
     inset-block-end: 0;
-    z-index: -1;
+    z-index: -2;
 }
 .car-body .upper .chair{
     width: 21%;
@@ -493,7 +493,7 @@ body{
     margin: auto;
     inset-inline-end: 24.8%;
     border-radius: 50%;
-    z-index: -1;
+    z-index: -2;
 }
 
 
@@ -823,14 +823,14 @@ body{
 
 
 
-.car-body .car-frame .splash-shield{
-    width: 66%;
+.car-body .car-frame .splash-shield {
+    width: 65%;
     height: 14%;
     display: block;
     background-color: var(--black);
     position: absolute;
     inset-block-end: -7%;
-    inset-inline-start: 17%;
+    inset-inline-start: 17.5%;
     border-radius: 18%;
     border-end-start-radius: 4% 55%;
     border-end-end-radius: 4% 55%;
@@ -872,13 +872,13 @@ body{
 }
 .tires .wheel .shadow-2 {
     background: var(--black);
-    width: 200%;
+    width: 224%;
     height: 57%;
     border-radius: 92%;
     display: block;
     position: absolute;
-    inset-block-start: 0%;
-    margin-inline: -25%;
+    inset-block-start: 4%;
+    margin-inline: -28%;
 }
 .tires .wheel:first-of-type .shadow-2 {
     inset-inline-start: 0;
