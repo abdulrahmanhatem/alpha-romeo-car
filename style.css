@@ -484,7 +484,7 @@ body{
     margin: auto;
     inset-inline-start: 40%;
 }
-.car-body .upper .steering{
+.car-body .upper .steering {
     width: 15%;
     height: 50%;
     position: absolute;
@@ -493,8 +493,8 @@ body{
     margin: auto;
     inset-inline-end: 24.8%;
     border-radius: 50%;
+    z-index: -1;
 }
-
 
 
 
